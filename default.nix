@@ -19,7 +19,7 @@ stdenv.mkDerivation {
   '';
   installPhase = ''
     mkdir -p $out/bin
-    cp ${./run.py} $out/bin/redis-test
+    cp ${./run1.py} $out/bin/redis-test
     chmod a+x $out/bin/redis-test
   '';
   shellHook = ''
